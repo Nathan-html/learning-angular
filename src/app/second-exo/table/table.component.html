@@ -1,0 +1,9 @@
+<thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">nom</th>
+    </tr>
+</thead>
+<tbody>
+    <tr app-row *ngFor="let pokemon of pokemons;" [pokemon]="pokemon"></tr>
+</tbody>

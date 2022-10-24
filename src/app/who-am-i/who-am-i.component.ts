@@ -7,8 +7,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class WhoAmIComponent implements OnInit {
 
-  @Input() firstName = "Nathan";
-  @Input() lastName = "Flacher";
+  @Input() firstName!: String;
+  @Input() lastName!: String;
 
   @Output() printAlert = new EventEmitter<void>();
 

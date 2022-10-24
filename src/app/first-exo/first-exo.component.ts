@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-first-exo',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstExoComponent implements OnInit {
 
-  firstName: String = "Nathan";
-  lastName: String = "Flacher";
+  @Input() firstName!: String;
+  @Input() lastName!: String;
   hidden: Boolean = true;
 
   cardTitle: String = "Nathan FLACHER";
