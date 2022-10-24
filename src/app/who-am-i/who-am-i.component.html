@@ -1,0 +1,10 @@
+<header class="container text-center my-5">
+    <img style="border-radius: 100%;" src="/assets/images/profile.png" height=144 width=144 alt="Photo de Nathan Flacher" priority />
+    <h1>{{firstName}} {{lastName}}</h1>
+</header>
+<main>
+    <div class="text-center">
+        <button class="btn btn-dark" [hidden]="hidden" (click)="logEvent($event)" >Logger un event</button>
+    </div>
+</main>
+
