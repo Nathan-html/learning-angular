@@ -11,4 +11,9 @@
     [lastName]="users[0].lastName"
 ></app-first-exo> -->
 
-<app-second-exo></app-second-exo>
+<!-- <app-second-exo></app-second-exo> -->
+
+<app-compteur
+    [count]="count"
+    (incrementCount)="countUp()"
+></app-compteur>

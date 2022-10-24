@@ -9,6 +9,7 @@ import { SecondExoComponent } from './second-exo/second-exo.component';
 import { GlobalHeaderComponent } from './global-header/global-header.component';
 import { TableComponent } from './second-exo/table/table.component';
 import { RowComponent } from './second-exo/table/row/row.component';
+import { CompteurComponent } from './compteur/compteur.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { RowComponent } from './second-exo/table/row/row.component';
     SecondExoComponent,
     TableComponent,
     RowComponent,
+    CompteurComponent,
   ],
   imports: [
     BrowserModule,
