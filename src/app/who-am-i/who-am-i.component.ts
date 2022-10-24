@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-who-am-i',
@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhoAmIComponent implements OnInit {
 
-  firstName: String = "Nathan";
-  lastName: String = "Flacher";
+  @Input() firstName = "Nathan";
+  @Input() lastName = "Flacher";
+
+  @Output() printAlert = new EventEmitter<void>();
+
   hidden: Boolean = true;
 
   constructor() { }
@@ -20,7 +23,7 @@ export class WhoAmIComponent implements OnInit {
   }
 
   logEvent(event: MouseEvent) {
+    this.printAlert.emit();
     console.log(event);
-    
   }
 }

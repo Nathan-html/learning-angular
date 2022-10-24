@@ -1,0 +1,22 @@
+<header class="container text-center my-5">
+    <img style="border-radius: 100%;" src="/assets/images/profile.png" height=144 width=144 alt="Photo de Nathan Flacher" priority />
+    <h1>Pokédex</h1>
+</header>
+<main>
+    <div class="d-flex justify-content-center">
+        <table class="table" style="width: 20rem;">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">nom</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pokemon of pokemons;">
+                <th scope="row">{{ pokemon.id }}</th>
+                <td>{{ pokemon.name }}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</main>
